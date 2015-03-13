@@ -1,0 +1,84 @@
+::selection {
+    background: rgb(255,175,175);
+}
+::-moz-selection {
+    background: rgb(255,175,175);
+}
+
+body {
+    background-color: @background;
+    font: normal 14pt/1.1 'Futura PT Light', sans-serif;
+    color: #252525;
+}
+input[type='search'] {
+    font-family: 'Futura PT Light';
+}
+input:focus {
+    outline: 0;
+}
+a {
+   -moz-user-select: none;
+   -khtml-user-select: none;
+   -webkit-user-select: none;
+   -ms-user-select: none;
+   user-select: none;
+}
+div, del, ins {
+    display: block;
+}
+a {
+    text-decoration: none;
+     color: #222;
+     font-weight: normal;
+    &:hover {
+       
+        color: #aaa;
+    }
+}
+img {
+    display: block;
+    vertical-align: top;
+}
+main {
+    .clearfix;
+}
+section {
+    .clearfix; 
+    display: block;  
+    margin-bottom: 30px;
+}
+figure {
+    display: block;
+    position: relative;   
+}
+figcaption {
+  
+}
+main {
+    position: relative;   
+}
+button {
+    cursor: pointer;
+    display: inline-block;
+    outline: 0;
+    &:active, &:focus {
+        outline: 0;
+    }
+}
+p {
+    margin: 20px 0;
+}
+h1 {
+   
+}
+h2 {
+  
+}
+h3 {
+  
+}
+aside  {
+    li {
+        margin: 5px 0;
+    }
+}

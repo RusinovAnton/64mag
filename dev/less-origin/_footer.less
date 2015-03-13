@@ -1,0 +1,130 @@
+.footer {
+
+    margin-top: 30px;
+    padding: 20px 0;    
+    font-size: 1em;
+    .foot-col {
+        float: left;
+        width: @wrap/8;
+    }
+    .foot-title {
+        font: normal 1em/1 "Futura PT Light", sans-serif;
+    }
+    .sub-nav-link {
+        &:hover {
+            color: #999
+        }
+    }
+    .main-footer {
+        padding-bottom: 40px;
+        .clearfix;
+    }
+    .foot-botline {
+        position: relative;
+        margin: 10px 0 20px;
+        #go-up {
+            position: absolute;
+            cursor: pointer;
+            background-color: transparent;
+            width: 25px;
+            height: 10px;
+            background-image: url(assets/images/icon-sprite.png);
+            background-repeat: no-repeat;
+            background-position: -44px -20px;
+
+            
+            top: 20px;
+            left: 50%;
+            .transform(translateX(-50%));
+
+        }
+        .clearfix;
+        .copyright {
+        	float: left;
+            font-size: 0.8em;
+            span {
+                display: inline-block;                
+                text-transform: uppercase;
+            }
+        }
+        a {
+            margin: 0 10px;
+        }
+        .foot-misc {
+        	float: right;
+            font-size: 0.8em;
+            text-transform: uppercase;
+        }
+        .foot-socials {
+            display: inline-block;
+            padding: 0 15px;
+            .clearfix;
+            position: relative;
+            top: 2px;
+            li{
+                display: inline-block;
+                vertical-align: top;
+                height: 14px;
+                margin-left: 7px;
+                .foot-soc-item {
+                    font-size: 0;
+                    color: transparent; 
+                    display: block;
+                    background-image: url(assets/images/soc-sprite.png);
+                    background-repeat: no-repeat;
+                    height: 11px; 
+                    margin: 0;
+                    &:hover {
+                        opacity: 0.8;
+                    }
+                    &.fb {
+                        width: 6px;
+                        background-position: -115px -160px;
+                    }
+                    &.tw {
+                        width: 10px;
+                        background-position: -121px -160px;
+                    }
+                    /*&.vim {
+                        width: 11px;
+                        background-position: -132px -160px;
+                    }*/
+                    &.inst {
+                        width: 12px;
+                        background-position: -143px -160px;
+                    }
+                    /*&.pin {
+                        width: 11px;
+                        background-position: -155px -160px;
+                    }*/
+                    &.tum {
+                        width: 7px;
+                        background-position: -166px -160px;
+                    }
+                    &.sc {
+                        width: 16px;
+                        background-position: -173px -160px;
+                    }
+                    &.vk {
+                        width: 12px;
+                        background-position: -190px -160px;
+                    }
+                }
+            }
+        }
+    }
+}
+.footer.footer-inverse {
+    color: #f0f0f0;
+    a {
+        color: #f0f0f0;
+    }
+    background-color: #252525;
+    .foot-botline #go-up {
+        background-position: -44px -30px;
+    }
+}
+.twitter-timeline {
+    width: 322px;
+    height: 420px;
+}
